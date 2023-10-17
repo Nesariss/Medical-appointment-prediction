@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="396dp"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.354">
+
+        <RadioGroup
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Płeć"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/GenderM"
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:text="M"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/GenderK"
+                android:layout_width="66dp"
+                android:layout_height="68dp"
+                android:text="K"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="404dp"
+        android:layout_height="51dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.441">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="271dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Czy pacjent otrzymuje stypendium?"
+                android:textColor="#040404"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/S_T"
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:text="Tak" />
+
+            <RadioButton
+                android:id="@+id/S_N"
+                android:layout_width="66dp"
+                android:layout_height="68dp"
+                android:text="Nie" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="406dp"
+        android:layout_height="53dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="271dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Czy pacjent ma nadciśnienie?"
+                android:textColor="#050505"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/NC_T"
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:text="Tak" />
+
+            <RadioButton
+                android:id="@+id/NC_N"
+                android:layout_width="66dp"
+                android:layout_height="68dp"
+                android:text="Nie" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="403dp"
+        android:layout_height="53dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.679">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="271dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Czy pacjent jest niepełnosprawny?"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/N_T"
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:text="Tak" />
+
+            <RadioButton
+                android:id="@+id/N_N"
+                android:layout_width="66dp"
+                android:layout_height="68dp"
+                android:text="Nie" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="408dp"
+        android:layout_height="48dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.604">
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="271dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Czy pacjent jest alkoholikiem?"
+                android:textColor="#050505"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/A_T"
+                android:layout_width="66dp"
+                android:layout_height="wrap_content"
+                android:text="Tak" />
+
+            <RadioButton
+                android:id="@+id/A_N"
+                android:layout_width="66dp"
+                android:layout_height="68dp"
+                android:text="Nie" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Predykcja"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="405dp"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.275">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Wiek"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="53dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dzień zapisu na wizytę"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/datePickerButton"
+            style="?android:spinnerStyle"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:onClick="openDatePicker"
+            android:text="JAN 01 2020"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="407dp"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164">
+
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="269dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dzień wizyty"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/datePickerButton2"
+            style="?android:spinnerStyle"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:onClick="openDatePicker2"
+            android:text="JAN 01 2020"
+            android:textColor="@color/black" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="403dp"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.842">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Czy pacjent otrzymał SMS z przypomnieniem o wizycie?"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/SMS_T"
+            android:layout_width="66dp"
+            android:layout_height="61dp"
+            android:text="Tak" />
+
+        <RadioButton
+            android:id="@+id/SMS_N"
+            android:layout_width="66dp"
+            android:layout_height="68dp"
+            android:text="Nie" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="404dp"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.752">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Czy pacjent cierpi na cukrzycę?"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/C_T"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:text="Tak" />
+
+        <RadioButton
+            android:id="@+id/C_N"
+            android:layout_width="66dp"
+            android:layout_height="68dp"
+            android:text="Nie" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
